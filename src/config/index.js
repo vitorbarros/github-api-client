@@ -1,10 +1,10 @@
-/**
- * General configuration file
- * @type {{ApiUrl: string}}
- */
+const windowEnv = window || {};
+const { env } = windowEnv;
+
+const apiBaseUrl = env.API_BASE_URL;
 
 const config = {
-  ApiUrl: 'https://api.github.com',
+  ApiUrl: apiBaseUrl,
 };
 
 export { config };

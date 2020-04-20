@@ -9,6 +9,8 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "i18n-js": "^3.5.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
@@ -37,11 +39,12 @@
   "homepage": "/",
   "proxy": "http://localhost:9007",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server/server.js",
+    "dev": "npm run start & PORT=3001 react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "gzip -r -k -f build/static",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "gzip -r -k -f build/static"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
