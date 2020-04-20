@@ -3,6 +3,11 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from '../pages/Home';
 import UserDetails from '../pages/UserDetails';
 
+/**
+ * Router component
+ * @returns {*}
+ * @constructor
+ */
 export default function Routes() {
   return (
     <Router>

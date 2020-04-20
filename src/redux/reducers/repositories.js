@@ -7,6 +7,13 @@ export const Types = {
 
 const INITIAL_STATE = [];
 
+/**
+ * Function that sets the repositories redux state
+ * @param state
+ * @param type
+ * @param content
+ * @returns {[]|*}
+ */
 export default function repositoriesReducer(state = INITIAL_STATE, { type, content }) {
   switch (type) {
     case Types.SET_REPOSITORIES:
@@ -16,6 +23,11 @@ export default function repositoriesReducer(state = INITIAL_STATE, { type, conte
   }
 }
 
+/**
+ * Function that store the user repositories api result in redux state
+ * @param username
+ * @returns {function(*): Promise<void>}
+ */
 export function setRepositories(username) {
   return dispatch => {
     const promises = {
