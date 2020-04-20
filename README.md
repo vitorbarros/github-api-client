@@ -19,7 +19,7 @@ Client de integração com a API do github criado com react.
  ## Instruções para rodar local
  
  - Navegue até a raiz do projeto através do terminal e execute o seguinte comando `yarn install`.
- - Após executar o passo anterior inicie o projeto da raiz através do terminal com o comando `yarn start`.
+ - Após executar o passo anterior inicie o projeto da raiz através do terminal com o comando `yarn dev`.
  - O navegador deve abrir automaticamente na página inicial do projeto, caso isso não ocorra acesse o seguinte endereço no seu navegador `http://localhost:3000`
  
  ## Rotas
