@@ -6,6 +6,13 @@ import { setRepositories } from "../redux/reducers/repositories";
 import { Grid } from "@material-ui/core";
 import i18n from '../translations';
 
+/**
+ * User Details Page. Page responsable to render the information accroding to the user
+ * search criteria
+ * @param match
+ * @returns {*}
+ * @constructor
+ */
 function UserDetails({ match = { params: { username: '' } } }) {
   const dispatch = useDispatch();
   const user = useSelector(store => store.user);
@@ -17,6 +24,11 @@ function UserDetails({ match = { params: { username: '' } } }) {
     }
     // eslint-disable-next-line
   }, [dispatch, user.id, match.params.username, repositories.length]);
+
+  /**
+   * Function that render the message to aware user that no data was found
+   * @returns {*}
+   */
   const renderUserNotFount = () => {
     return (
       <Grid container className="userDetail">
@@ -26,6 +38,10 @@ function UserDetails({ match = { params: { username: '' } } }) {
       </Grid>
     )
   };
+  /**
+   * Function that render the user search result information
+   * @returns {*}
+   */
   const renderContent = () => {
     return (
       <Grid container>

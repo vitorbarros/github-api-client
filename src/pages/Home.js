@@ -4,10 +4,19 @@ import { Grid, Button, Input, InputAdornment } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import i18n from '../translations';
 
+/**
+ * Home page. Page responsable to validate the search criteria and send the information
+ * to result page
+ * @returns {*}
+ * @constructor
+ */
 function Home() {
   const [searchInputValue, setSearchInputValue] = useState('');
   const [shouldRedirect, setShouldRedirect] = useState(false);
   const [showErrorMessage, setShowErrorMessage] = useState(false);
+  /**
+   * Form search method validation
+   */
   const search = () => {
     setShowErrorMessage(false);
     if (searchInputValue.trim()) {
