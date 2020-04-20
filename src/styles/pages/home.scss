@@ -1,0 +1,33 @@
+#homePage {
+  .containerDefinition {
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 100px auto;
+    border: 1px solid $light-grey;
+    border-radius: 15px;
+    padding: 15px;
+    .searchLabel {
+      font-family: $font;
+      display: block;
+      width: 100%;
+    }
+    .searchInput {
+      font-family: $font;
+      width: 100%;
+    }
+    .btnContainer {
+      padding: 0 5px;
+      .searchBtn {
+        width: 100%;
+        font-family: $font;
+      }
+    }
+    .errorMessageContainer {
+      p {
+        font-family: $font;
+        color: $red;
+      }
+    }
+  }
+}

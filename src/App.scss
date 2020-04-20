@@ -1,0 +1,21 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+// fonts definition
+$font: 'Roboto', sans-serif;
+$font-bold: 700;
+$font-semi-bold: 500;
+$font-light: 300;
+
+// colors
+$light-grey: #e0e0e0;
+$red: #ff0000;
+$black: #000000;
+
+body {
+  margin: 0;
+}
+
+// pages style
+@import 'styles/pages/home';
+@import 'styles/pages/userDetail';
