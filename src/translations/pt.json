@@ -1,0 +1,16 @@
+{
+  "searchLabel": "Encontre um usuário do GitHub pelo nome",
+  "search": "Buscar",
+  "errorSearchMessageInput": "Preencha o campo de busca",
+  "id": "ID:",
+  "name": "Nome:",
+  "login": "Login:",
+  "location": "Localização",
+  "bio": "BIO:",
+  "public_repos": "Repositórios Públicos:",
+  "followers": "Seguidores:",
+  "following": "Seguindo:",
+  "repositories": "Repositórios",
+  "starts": "Estrelas:",
+  "userNotFound": "OPS! Usuário não encontrado, volte para a página de busca e tente novamente"
+}
